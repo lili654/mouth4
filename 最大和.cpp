@@ -33,13 +33,13 @@ int d_prime(int x)//遍历所有因子数
 int main() {
      cin>>n;
      for(int i=1;i<=n;i++) cin>>a[i];
-     memset(f,-inf,sizeof(f));//初始化,sizof()需要带上头文件<algorithm>
+     memset(f,-inf,sizeof(f));//初始化,sizeof()需要带上头文件<algorithm>
     /*
     void *memset(void *s,int c,unsigned long n);
     函数功能：为指针变量s所指的前n个字节的内存单元填充给定的int型数值c，它可以为任何数据进行初始化。
     换句话说，就是将数值c以单个字节逐个拷贝的方式放到指针变量s所指的内存中去。 注意：只将数值c的最低一个字节填充到内存。
     示例：当c=-1时:
-    #include <string.h> /////注意要带上这个头文件，如果是C＋＋用<cstring>
+    #include <string.h> /////注意要带上这个头文件，如果是C++用<cstring>
     int dp[3];
     memset(dp,-1,sizeof(dp));
     for(int i=0;i<3;i++)
