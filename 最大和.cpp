@@ -20,7 +20,7 @@ bool is_prime(int x)//质数的判断
     for (int i = 2; i < x / i; i++  )
         if (x % i == 0)
             return false;
-    return true;
+    return true;          ////!!!!注意外置函数内的for 内部不要用括号括起来！！！调试会出错
 }
 
 int d_prime(int x)//遍历所有因子数
