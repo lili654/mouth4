@@ -12,6 +12,7 @@ int main()
         if(ans%i==mod[i]) //ans为满足当前模计算的数 
         {
             k=k/__gcd(k,i)*i;//计算最小公倍数 K为之前的步长， i是现在的步长 计算之后更新 k 
+                             //＿＿gcd(k,i):为求k和i的最大公约数 k/__gcd(k,i)*i:为求k和i的最小公倍数
             break;
          } 
          else ans+=k;//累加新步长 
