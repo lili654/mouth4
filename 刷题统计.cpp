@@ -59,3 +59,29 @@ int main(){
     return 0;
 
 }
+
+
+
+/*方法二
+#include<iostream>
+#include<cstring>
+#include<algorithm>
+using namespace std;
+typedef long long LL;
+int main()
+{
+    LL a,b,n;
+    cin>>a>>b>>n;
+    LL s=a*5+b*2;
+    LL res=n/s*7;
+    n=n%s;
+    LL d[]={a,a,a,a,a,b,b};
+    for(int i=0;n>0;i++)
+    {
+        n-=d[i];
+        res++;
+    }
+    cout<<res<<endl;
+    return 0;
+}
+*/
